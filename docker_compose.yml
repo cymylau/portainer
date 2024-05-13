@@ -2,10 +2,6 @@ services:
   smokeping:
     image: ubuntu:latest
     container_name: test
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Etc/UTC
     volumes:
-      - ./test.txt:/test.txt
+      - ${PWD}/test.txt:/test.txt
     restart: unless-stopped
