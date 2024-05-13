@@ -12,6 +12,6 @@ services:
       - SHARED_SECRET=password #optional
       - CACHE_DIR=/tmp #optional
     volumes:
-      - smokeping_config:/test
+      - ./smokeping_config:/test
       - smokeping_data:/data
     restart: unless-stopped
