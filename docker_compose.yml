@@ -1,6 +1,3 @@
----
-volumes:
-  smokeping_data:
 services:
   smokeping:
     image: lscr.io/linuxserver/smokeping:latest
@@ -13,5 +10,4 @@ services:
       - CACHE_DIR=/tmp #optional
     volumes:
       - ./smokeping_config:/test
-      - smokeping_data:/data
     restart: unless-stopped
