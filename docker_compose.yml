@@ -1,7 +1,13 @@
 services:
-  smokeping:
+  ubuntu:
     image: ubuntu:latest
     container_name: test
     #volumes:
     #  - test.txt:/test.txt
     restart: unless-stopped
+    configs:
+      - source: ./test.txt
+        target: /test.txt
+        uid: "1001"
+        gid: "1001"
+        mode: 0600
