@@ -8,7 +8,6 @@ services:
   configs:
     - source: test_config
       target: /test.txt
-
 configs:
   test_config:
-  file: ./test.txt
+  file: test.txt
