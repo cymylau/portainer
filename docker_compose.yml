@@ -2,6 +2,6 @@ services:
   smokeping:
     image: ubuntu:latest
     container_name: test
-    volumes:
-      - test.txt:/test.txt
+    #volumes:
+    #  - test.txt:/test.txt
     restart: unless-stopped
