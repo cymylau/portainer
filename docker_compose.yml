@@ -1,3 +1,4 @@
+---
 volumes:
   smokeping_data:
 services:
