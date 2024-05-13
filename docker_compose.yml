@@ -3,5 +3,5 @@ services:
     image: ubuntu:latest
     container_name: test
     volumes:
-      - ${PWD}/test.txt:/test.txt
+      - test.txt:/test.txt
     restart: unless-stopped
