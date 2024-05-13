@@ -1,5 +1,5 @@
 volumes:
-  - smokeping_data
+  smokeping_data:
 services:
   smokeping:
     image: lscr.io/linuxserver/smokeping:latest
