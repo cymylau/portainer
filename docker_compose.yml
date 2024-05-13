@@ -5,9 +5,10 @@ services:
     #volumes:
     #  - test.txt:/test.txt
     restart: unless-stopped
-    configs:
-      - source: ./test.txt
-        target: /test.txt
-        uid: "1001"
-        gid: "1001"
-        mode: 0600
+  configs:
+    - source: test_config
+      target: /test.txt
+
+configs:
+  test_config:
+  file: ./test.txt
